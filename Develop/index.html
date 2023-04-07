@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="modal-background">
+        <div id="modal-window">
+            <div id="password-length">
+              <h2>Please select a password length</h2>
+              <h4>(8-128 characters)</h4>
+              <input type ='text' id="password-length-input" >
+              
+            </div>
+            <br>
+            <div id="character-type">
+              <h2>Please select a character type</h2>
+              <h4>(At least one)</h4>
+              <input type="checkbox" id="lowercase" name="lowercase" value="1">
+              <label for="lowercase"> Lowercase</label><br>
+              <input type="checkbox" id="uppercase" name="uppercase" value="1">
+              <label for="lowercase"> Uppercase</label><br>
+              <input type="checkbox" id="numeric" name="numeric" value="1">
+              <label for="lowercase"> Numeric</label><br>
+              <input type="checkbox" id="special-character" name="special-character" value="1">
+              <label for="special-character"> Special Characters</label><br>
+            </div>
+            <div id="button-div">
+              <button id="generate">Generate Password</button>
+              <div id="validation-txt">Please ensure all prompts are valid</div>
+            </div>
+            
+              
+       
+
+      </div></div>
+        <header>
+          <h1>Password Generator</h1>
+        </header>
+        <div class="card">
+          <div class="card-header">
+            <h2>Generate a Password</h2>
+          </div>
+          <div class="card-body">
+            <textarea
+              readonly
+              id="password"
+              placeholder="Your Secure Password"
+              aria-label="Generated Password"
+            ></textarea>
+          </div>
+          <div class="card-footer">
+            <button id="open-prompts" class="open-prompts">Open Prompts</button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
